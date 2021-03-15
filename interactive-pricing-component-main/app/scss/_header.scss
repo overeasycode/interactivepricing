@@ -1,0 +1,48 @@
+.header {
+  text-align: center;
+  margin-top: 5.8125rem;
+  @include breakpoint-up(medium) {
+    margin-top: 6.9375rem;
+    margin-bottom: -84px;
+  }
+
+  h1 {
+    color: $darkDesatBlue;
+    position: relative;
+    z-index: 2;
+    font-size: 1.3125rem;
+    @include breakpoint-up(medium) {
+      font-size: 1.75rem;
+    }
+  }
+  p {
+    color: $grayishBlue;
+    font-size: 0.875rem;
+    position: relative;
+    bottom: 166px;
+    z-index: 2;
+    @include breakpoint-down(small) {
+      max-width: 12.125rem;
+      margin: 0 auto;
+      margin-top: 15px;
+      line-height: 1.8;
+    }
+  }
+
+  //bubble Image
+  .bubblyImg {
+    background-image: url(/images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    width: 9.5rem;
+    height: 9.0625rem;
+    position: relative;
+    top: -5.8125rem;
+    z-index: 1;
+    @include breakpoint-down(small) {
+      position: relative;
+      top: -70px;
+    }
+  }
+}
